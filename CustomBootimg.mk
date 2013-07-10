@@ -2,6 +2,14 @@ LOCAL_PATH := $(call my-dir)
 
 REPACK_MT65XX := device/amoi/n828/tools/repack-MT65xx.pl
 
+$(INSTALLED_RECOVERYIMAGE_TARGET): $(REPACK_MT65XX) \
+		$(recovery_kernel) \
+		$(TARGET_RECOVERY_ROOT_TIMESTAMP)
+	@echo -e ${CL_CYN}"----- Making recovery image ------"${CL_RST}
+	$(REPACK_MT65XX) -recovery $(recovery_kernel) $(TARGET_RECOVERY_ROOT_OUT) $@
+	@echo -e ${CL_CYN}"Made recovery image: $@"${CL_RST}
+	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
+
 INSTALLED_BOOTIMAGE_TARGET := $(PRODUCT_OUT)/boot.img
 
 $(INSTALLED_BOOTIMAGE_TARGET): $(REPACK_MT65XX) $(INSTALLED_KERNEL_TARGET) $(TARGET_ROOT_OUT)
