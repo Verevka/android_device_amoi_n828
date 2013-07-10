@@ -1,11 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 
-MKBOOTIMG := device/amoi/n828/tools/mkbootimg
+REPACK_MT65XX := device/amoi/n828/tools/repack-MT65xx.pl
 
 INSTALLED_BOOTIMAGE_TARGET := $(PRODUCT_OUT)/boot.img
 
-$(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES)
+$(INSTALLED_BOOTIMAGE_TARGET): $(REPACK_MT65XX) $(INSTALLED_KERNEL_TARGET) $(TARGET_ROOT_OUT)
 	$(call pretty,"Target boot image: $@")
-	$(hide) $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_ARGS) --output $@
+	$(REPACK_MT65XX) -boot $(INSTALLED_KERNEL_TARGET) $(TARGET_ROOT_OUT) $@
 	$(hide) $(call assert-max-image-size,$@,$(BOARD_BOOTIMAGE_PARTITION_SIZE),raw)
 	@echo -e ${CL_CYN}"Made boot image: $@"${CL_RST}
