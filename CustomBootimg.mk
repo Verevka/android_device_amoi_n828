@@ -8,7 +8,7 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(REPACK_MT65XX) \
 	@echo -e ${CL_CYN}"----- Making recovery image ------"${CL_RST}
 	$(REPACK_MT65XX) -recovery $(recovery_kernel) $(TARGET_RECOVERY_ROOT_OUT) $@
 	@echo -e ${CL_CYN}"Made recovery image: $@"${CL_RST}
-	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
+	#$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
 
 INSTALLED_BOOTIMAGE_TARGET := $(PRODUCT_OUT)/boot.img
 
