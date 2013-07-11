@@ -47,3 +47,13 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x40000000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_CUSTOM_BOOTIMG_MK := device/amoi/n828/CustomBootimg.mk
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0
+    ro.allow.mock.location=1
+    persist.mtk.aee.aed=on
+    ro.debuggable=1
+    persist.sys.usb.config=mass_storage
+    persist.service.acm.enable=0
+    ro.mount.fs=EXT4
+
