@@ -156,6 +156,32 @@ PRODUCT_COPY_FILES += \
 	device/amoi/n828/etc/xlog-filter-default:system/etc/xlog-filter-default \
 	device/amoi/n828/etc/xlog-filter-tags:system/etc/xlog-filter-tags
 
+# egl
+PRODUCT_COPY_FILES += \
+    device/amoi/n828/egl/egl.cfg:system/lib/egl/egl.cfg
+
+# modules
+PRODUCT_COPY_FILES += \
+    device/amoi/n828/modules/ccci.ko:system/lib/modules/ccci.ko \
+	device/amoi/n828/modules/ccci_plat.ko:system/lib/modules/ccci_plat.ko \
+	device/amoi/n828/modules/devapc.ko:system/lib/modules/devapc.ko \
+	device/amoi/n828/modules/devinfo.ko:system/lib/modules/devinfo.ko \
+	device/amoi/n828/modules/hid-logitech-dj.ko:system/lib/modules/hid-logitech-dj.ko \
+	device/amoi/n828/modules/mtk_fm_drv.ko:system/lib/modules/mtk_fm_drv.ko \
+	device/amoi/n828/modules/mtk_hif_sdio.ko:system/lib/modules/mtk_hif_sdio.ko \
+	device/amoi/n828/modules/mtk_stp_bt.ko:system/lib/modules/mtk_stp_bt.ko \
+	device/amoi/n828/modules/mtk_stp_gps.ko:system/lib/modules/mtk_stp_gps.ko \
+	device/amoi/n828/modules/mtk_stp_uart.ko:system/lib/modules/mtk_stp_uart.ko \
+	device/amoi/n828/modules/mtk_stp_wmt.ko:system/lib/modules/mtk_stp_wmt.ko \
+	device/amoi/n828/modules/mtk_wmt_wifi.ko:system/lib/modules/mtk_wmt_wifi.ko \
+	device/amoi/n828/modules/mtklfb.ko:system/lib/modules/mtklfb.ko \
+	device/amoi/n828/modules/pvrsrvkm.ko:system/lib/modules/pvrsrvkm.ko \
+	device/amoi/n828/modules/scsi_tgt.ko:system/lib/modules/scsi_tgt.ko \
+	device/amoi/n828/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+	device/amoi/n828/modules/sec.ko:system/lib/modules/sec.ko \
+	device/amoi/n828/modules/vcodec_kernel_driver.ko:system/lib/modules/vcodec_kernel_driver.ko \
+	device/amoi/n828/modules/wlan_mt6628.ko:system/lib/modules/wlan_mt6628.ko
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
