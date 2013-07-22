@@ -29,6 +29,40 @@ PRODUCT_COPY_FILES += \
     device/amoi/n828/recovery/sec.ko:recovery/root/sec.ko \
     device/amoi/n828/recovery/ueventd.rc:recovery/root/ueventd.rc
 
+# bin
+PRODUCT_COPY_FILES += \
+    device/amoi/n828/bin/akmd8963:system/bin/akmd8963 \
+	device/amoi/n828/bin/akmd8975:system/bin/akmd8975 \
+	device/amoi/n828/bin/ami304d:system/bin/ami304d \
+	device/amoi/n828/bin/bmm050d:system/bin/bmm050d \
+	device/amoi/n828/bin/bugmailer.sh:system/bin/bugmailer.sh \
+	device/amoi/n828/bin/dhcp6c:system/bin/dhcp6c \
+	device/amoi/n828/bin/dm_agent_binder:system/bin/dm_agent_binder \
+	device/amoi/n828/bin/dpfd:system/bin/dpfd \
+	device/amoi/n828/bin/dualmdlogger:system/bin/dualmdlogger \
+	device/amoi/n828/bin/geomagneticd:system/bin/geomagneticd \
+	device/amoi/n828/bin/hald:system/bin/hald \
+	device/amoi/n828/bin/ipod:system/bin/ipod \
+	device/amoi/n828/bin/matv:system/bin/matv \
+	device/amoi/n828/bin/memsicd:system/bin/memsicd \
+	device/amoi/n828/bin/msensord:system/bin/msensord \
+	device/amoi/n828/bin/mtk_agpsd:system/bin/mtk_agpsd \
+	device/amoi/n828/bin/mtkbt:system/bin/mtkbt \
+	device/amoi/n828/bin/mtkGD:system/bin/mtkGD \
+	device/amoi/n828/bin/netdiag:system/bin/netdiag \
+	device/amoi/n828/bin/nvram_agent_binder:system/bin/nvram_agent_binder \
+	device/amoi/n828/bin/nvram_daemon:system/bin/nvram_daemon \
+	device/amoi/n828/bin/orientationd:system/bin/orientationd \
+	device/amoi/n828/bin/poad:system/bin/poad \
+	device/amoi/n828/bin/pq:system/bin/pq \
+	device/amoi/n828/bin/sbchk:system/bin/sbchk \
+	device/amoi/n828/bin/shutdown:system/bin/shutdown \
+	device/amoi/n828/bin/thermal:system/bin/thermal \
+	device/amoi/n828/bin/thermal_manager:system/bin/thermal_manager \
+	device/amoi/n828/bin/vtservice:system/bin/vtservice \
+	device/amoi/n828/bin/wpa_supplicant:system/bin/wpa_supplicant \
+	device/amoi/n828/bin/xlog:system/bin/xlog
+
 # boot
 PRODUCT_COPY_FILES += \
     device/amoi/n828/boot/advanced_meta_init.rc:root/advanced_meta_init.rc \
@@ -199,6 +233,15 @@ PRODUCT_COPY_FILES += \
 	device/amoi/n828/modules/sec.ko:system/lib/modules/sec.ko \
 	device/amoi/n828/modules/vcodec_kernel_driver.ko:system/lib/modules/vcodec_kernel_driver.ko \
 	device/amoi/n828/modules/wlan_mt6628.ko:system/lib/modules/wlan_mt6628.ko
+
+# xbin
+PRODUCT_COPY_FILES += \
+	device/amoi/n828/xbin/mnld:system/xbin/mnld
+
+# vendor
+PRODUCT_COPY_FILES += \
+    device/amoi/n828/vendor/bin/pvrsrvctl:system/vendor/bin/pvrsrvctl \
+	device/amoi/n828/vendor/bin/rc.fac:system/vendor/bin/rc.fac
 
 $(call inherit-product, build/target/product/full.mk)
 
