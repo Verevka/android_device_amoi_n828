@@ -29,6 +29,23 @@ PRODUCT_COPY_FILES += \
     device/amoi/n828/recovery/sec.ko:recovery/root/sec.ko \
     device/amoi/n828/recovery/ueventd.rc:recovery/root/ueventd.rc
 
+# boot
+PRODUCT_COPY_FILES += \
+    device/amoi/n828/boot/advanced_meta_init.rc:root/advanced_meta_init.rc \
+	device/amoi/n828/boot/factory_init.project.rc:root/factory_init.project.rc \
+	device/amoi/n828/boot/factory_init.rc:root/factory_init.rc \
+	device/amoi/n828/boot/fstab:root/fstab \
+	device/amoi/n828/boot/init.aee.customer.rc:root/init.aee.customer.rc \
+	device/amoi/n828/boot/init.charging.rc:root/init.charging.rc \
+	device/amoi/n828/boot/init.modem.rc:root/init.modem.rc \
+	device/amoi/n828/boot/init.no_ssd.rc:root/init.no_ssd.rc \
+	device/amoi/n828/boot/init.project.rc:root/init.project.rc \
+	device/amoi/n828/boot/init.protect.rc:root/init.protect.rc \
+	device/amoi/n828/boot/init.xlog.rc:root/init.xlog.rc \
+	device/amoi/n828/boot/meta_init.modem.rc:root/meta_init.modem.rc \
+	device/amoi/n828/boot/meta_init.project.rc:root/meta_init.project.rc \
+	device/amoi/n828/boot/meta_init.rc:root/meta_init.rc
+
 # tp
 PRODUCT_COPY_FILES += \
     device/amoi/n828/.tp/.ht120.mtc:system/etc/.tp/.ht120.mtc \
