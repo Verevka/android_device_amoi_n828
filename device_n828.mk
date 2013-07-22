@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
 	device/amoi/n828/boot/init.no_ssd.rc:root/init.no_ssd.rc \
 	device/amoi/n828/boot/init.project.rc:root/init.project.rc \
 	device/amoi/n828/boot/init.protect.rc:root/init.protect.rc \
+	device/amoi/n828/boot/init.rc:root/init.rc \
 	device/amoi/n828/boot/init.xlog.rc:root/init.xlog.rc \
 	device/amoi/n828/boot/meta_init.modem.rc:root/meta_init.modem.rc \
 	device/amoi/n828/boot/meta_init.project.rc:root/meta_init.project.rc \
