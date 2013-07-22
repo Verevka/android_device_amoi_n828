@@ -76,9 +76,9 @@ PRODUCT_COPY_FILES += \
 	device/amoi/n828/firmware/WIFI_RAM_CODE_MT6628:system/etc/firmware/WIFI_RAM_CODE_MT6628 \
 	device/amoi/n828/firmware/WMT.cfg:system/etc/firmware/WMT.cfg
 
-# frm
+# fmr
 PRODUCT_COPY_FILES += \
-    device/amoi/n828/frm/fm_cust.cfg:system/etc/frm/fm_cust.cfg
+    device/amoi/n828/fmr/fm_cust.cfg:system/etc/fmr/fm_cust.cfg
 
 # permissions
 PRODUCT_COPY_FILES += \
