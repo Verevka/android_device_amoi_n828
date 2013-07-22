@@ -54,17 +54,17 @@ PRODUCT_COPY_FILES += \
 
 # firmware
 PRODUCT_COPY_FILES += \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_rom.bin:system/etc/firmware/mt6682/mt6628_fm_rom.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v1_coeff.bin:system/etc/firmware/mt6682/mt6628_fm_v1_coeff.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v1_patch.bin:system/etc/firmware/mt6682/mt6628_fm_v1_patch.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v2_coeff.bin:system/etc/firmware/mt6682/mt6628_fm_v2_coeff.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v2_patch.bin:system/etc/firmware/mt6682/mt6628_fm_v2_patch.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v3_coeff.bin:system/etc/firmware/mt6682/mt6628_fm_v3_coeff.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v3_patch.bin:system/etc/firmware/mt6682/mt6628_fm_v3_patch.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v4_coeff.bin:system/etc/firmware/mt6682/mt6628_fm_v4_coeff.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v4_patch.bin:system/etc/firmware/mt6682/mt6628_fm_v4_patch.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v5_coeff.bin:system/etc/firmware/mt6682/mt6628_fm_v5_coeff.bin \
-    device/amoi/n828/firmware/mt6682/mt6628_fm_v5_patch.bin:system/etc/firmware/mt6682/mt6628_fm_v5_patch.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_rom.bin:system/etc/firmware/mt6628/mt6628_fm_rom.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v1_coeff.bin:system/etc/firmware/mt6628/mt6628_fm_v1_coeff.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v1_patch.bin:system/etc/firmware/mt6628/mt6628_fm_v1_patch.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v2_coeff.bin:system/etc/firmware/mt6628/mt6628_fm_v2_coeff.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v2_patch.bin:system/etc/firmware/mt6628/mt6628_fm_v2_patch.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v3_coeff.bin:system/etc/firmware/mt6628/mt6628_fm_v3_coeff.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v3_patch.bin:system/etc/firmware/mt6628/mt6628_fm_v3_patch.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v4_coeff.bin:system/etc/firmware/mt6628/mt6628_fm_v4_coeff.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v4_patch.bin:system/etc/firmware/mt6628/mt6628_fm_v4_patch.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v5_coeff.bin:system/etc/firmware/mt6628/mt6628_fm_v5_coeff.bin \
+    device/amoi/n828/firmware/mt6628/mt6628_fm_v5_patch.bin:system/etc/firmware/mt6628/mt6628_fm_v5_patch.bin \
 	device/amoi/n828/firmware/modem.img:system/etc/firmware/modem.img \
 	device/amoi/n828/firmware/mt6628_ant_m1.cfg:system/etc/firmware/mt6628_ant_m1.cfg \
 	device/amoi/n828/firmware/mt6628_patch_e1_hdr.bin:system/etc/firmware/mt6628_patch_e1_hdr.bin \
