@@ -52,3 +52,5 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.service.acm.enable=0 \
     ro.mount.fs=EXT4
 
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/amoi/n828/releasetools/ota_from_target_file
+
